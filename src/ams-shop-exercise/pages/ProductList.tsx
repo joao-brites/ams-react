@@ -23,7 +23,7 @@ export const ProductList = () => {
               xs: 12,
               sm: 12,
               md: 6,
-              lg: 6cd
+              lg: 6
             }}
           >
             <ProductCard product={product} onAddToCart={addToCart} />

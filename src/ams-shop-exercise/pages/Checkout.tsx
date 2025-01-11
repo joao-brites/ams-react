@@ -35,7 +35,9 @@ export const Checkout = () => {
         </Table>
         <Text size="xl" fw={700} ta="right">
           Total: $
-          {items.reduce((total, item) => total + item.price * item.quantity, 0)}
+          {items
+            .reduce((total, item) => total + item.price * item.quantity, 0)
+            .toFixed(2)}
         </Text>
       </Stack>
     </Container>
