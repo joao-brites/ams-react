@@ -4,7 +4,7 @@ import { ShopRouter } from "./ams-shop-exercise/router/ShopRouter";
 import { AcademyRouter } from "./ams-academy/router";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
-  <MantineProvider>
+  <MantineProvider defaultColorScheme={"dark"}>
     {process.env.APP === "academy" ? (
       <AcademyRouter />
     ) : process.env.APP === "shop" ? (

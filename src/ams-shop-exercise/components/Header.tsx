@@ -9,28 +9,28 @@ export const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <Container size="lg" h="100%" px="md">
-      <Group h="100%" justify="space-between">
-        <Text
-          size="xl"
-          fw={700}
-          onClick={() => navigate("/")}
-          style={{ cursor: "pointer" }}
-        >
-          AMS SHOP
-        </Text>
-        <Group ml="auto">
-          <Button variant="subtle" onClick={() => clearCart()}>
-            Clear Cart
-          </Button>
-          <Button
-            leftSection={<IconShoppingCart />}
-            onClick={() => navigate("/checkout")}
+      <Container size="lg" h="100%" px="md">
+        <Group h="100%" justify="space-between">
+          <Text
+              size="xl"
+              fw={700}
+              onClick={() => navigate("/")}
+              style={{ cursor: "pointer" }}
           >
-            Cart ({getTotalItems()})
-          </Button>
+            AMS SHOP
+          </Text>
+          <Group ml="auto">
+            <Button variant="subtle" onClick={() => clearCart()}>
+              Clear Cart
+            </Button>
+            <Button
+                leftSection={<IconShoppingCart />}
+                onClick={() => navigate("/checkout")}
+            >
+              Cart ({getTotalItems()})
+            </Button>
+          </Group>
         </Group>
-      </Group>
-    </Container>
+      </Container>
   );
 };
