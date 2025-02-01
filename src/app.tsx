@@ -13,10 +13,7 @@ if (container) {
   const renderApp = async () => {
     let Component;
 
-    if (process.env.APP === "academy") {
-      const { AcademyRouter } = await import("./ams-academy/router");
-      Component = AcademyRouter;
-    } else if (process.env.APP === "shop") {
+    if (process.env.APP === "shop") {
       const { ShopRouter } = await import("./ams-shop/router/ShopRouter");
       Component = ShopRouter;
     } else {

@@ -1,17 +1,10 @@
-import {
-  Container,
-  Table,
-  Text,
-  Stack,
-  Group,
-  Button,
-  Badge
-} from "@mantine/core";
+import { Container, Table, Text, Stack, Group, Button } from "@mantine/core";
 import { useCart } from "../hooks/useCart";
 import { CartItem } from "../components/CartItem";
 
 export const Checkout = () => {
-  const { items, updateQuantity, removeFromCart, total } = useCart();
+  const { items, getTotal } = useCart();
+  const total = getTotal();
 
   if (items.length === 0) {
     return (
