@@ -5,7 +5,6 @@ import { Header } from "../components/Header";
 import { ProductList } from "../pages/ProductList";
 import { Checkout } from "../pages/Checkout";
 
-// ErrorBoundary for catching errors
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { hasError: boolean }
@@ -27,7 +26,6 @@ class ErrorBoundary extends React.Component<
   }
 }
 
-// Memoized Layout component
 const Layout = React.memo(({ children }: { children: React.ReactNode }) => (
   <AppShell header={{ height: 60 }} padding="md">
     <AppShell.Header>

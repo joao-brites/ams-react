@@ -4,9 +4,7 @@ export const theme = createTheme({
   primaryColor: "blue",
   defaultRadius: "md",
 
-  // Add a subtle background color to the whole app
   colors: {
-    // Custom blue shade
     blue: [
       "#E6F3FF",
       "#CCE7FF",
@@ -19,7 +17,6 @@ export const theme = createTheme({
       "#003366",
       "#001933"
     ],
-    // Custom gray shade for backgrounds
     gray: [
       "#F8F9FA",
       "#F1F3F5",
@@ -77,7 +74,6 @@ export const theme = createTheme({
     }
   },
 
-  // Global styles
   globalStyles: (theme) => ({
     body: {
       backgroundColor: theme.colors.gray[0],

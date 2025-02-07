@@ -9,7 +9,6 @@ const container = document.getElementById("root");
 if (container) {
   const root = createRoot(container);
 
-  // Determine which app to render based on environment variable
   const renderApp = async () => {
     let Component;
 

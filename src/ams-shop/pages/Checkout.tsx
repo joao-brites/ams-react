@@ -8,7 +8,7 @@ export const Checkout = () => {
 
   if (items.length === 0) {
     return (
-      <Container size="sm" py="xl">
+      <Container size="md" py="xl">
         <Stack align="center" gap="md">
           <Text size="xl">Your cart is empty</Text>
           <Button component="a" href="/">
@@ -20,7 +20,7 @@ export const Checkout = () => {
   }
 
   return (
-    <Container size="sm" py="xl">
+    <Container size="md" py="xl">
       <Stack gap="lg">
         <Text size="xl" fw={700}>
           Checkout
