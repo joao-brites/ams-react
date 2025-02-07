@@ -1,6 +1,6 @@
 # AMS SHOP
 
-## 🇵🇹 Português (Portugal)
+## 🇵🇹 Português
 
 O projeto consistiu na implementação de uma loja no âmbito da formação em React da AMS. Em seguida, apresenta-se um resumo do trabalho realizado:
 
